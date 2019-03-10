@@ -1,24 +1,23 @@
 # Amazfit Springboard Settings
 
-Simple application for enabling, disabling and rearranging pages on the launcher (aka Springboard) on the Amazfit Pace. Does not require root, does not require installing to the system, just install as normal and run it
+Aplicación simple para: activar, desactivar y reordenar las páginas del Springboard de Amazfit Pace. No requiere root, no hay que instalarla en el sistema, solo instalar como una app normal.
 
-## Features
-- Enable and disable pages (including those not available for modifying in the Amazfit phone app)
-- Rearrange pages (including those not available for modifying in the Amazfit phone app)
-- Includes capability to enable and disable custom pages if they ever become available
+## Autor Original
+Página de [KieronQuinn](https://github.com/KieronQuinn/AmazfitSpringboardSettings)
 
-## Download 
-Download either from the [XDA post](#) or the [releases page](https://github.com/KieronQuinn/AmazfitSpringboardSettings/releases)
+## Características
+- Activa y desactiva páginas (Incluidas aquellas que la app de Amazfit no deja)
+- Reordena las páginas (Incluidas aquellas que la app de Amazfit no deja)
+- Permite activar y desactivar paginas personalizadas si existen
+- Idiomas: Español e Inglés
 
-## Installation
+## Instalación
 
-`adb install -r SpringboardSettings-1.0.apk`
+`adb install -r NOMBRE_APLICACION.apk`
 
-## Uninstallation
+## Desinstalación
 
-`adb uninstall com.kieronquinn.app.springboardsettings`
+`adb uninstall com.manumatnez.app.sbsettings`
 
-## Screenshots
-<img src="https://github.com/KieronQuinn/AmazfitSpringboardSettings/raw/master/Images/springboard_settings.png" width="250"/>
-
-These screenshots were created using a custom frame, which can be found [here](https://github.com/KieronQuinn/AmazfitStepNotify/raw/master/Images/pace_frame.png)
+## Screenshot de KieronQuinn
+<img src="https://raw.githubusercontent.com/manumatnez/AmazfitSpringboardSettings/master/Images/springboard_settings.png" width="250"/>

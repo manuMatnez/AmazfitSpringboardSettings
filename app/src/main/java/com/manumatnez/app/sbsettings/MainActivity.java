@@ -17,6 +17,7 @@ import com.manumatnez.app.sbsettings.helper.SimpleItemTouchHelperCallback;
 import com.manumatnez.app.sbsettings.settings.Adapter;
 import com.manumatnez.app.sbsettings.settings.BaseSetting;
 import com.manumatnez.app.sbsettings.settings.HeaderSetting;
+import com.manumatnez.app.sbsettings.settings.IconSetting;
 import com.manumatnez.app.sbsettings.settings.SpringboardSetting;
 import com.manumatnez.app.sbsettings.settings.TextSetting;
 
@@ -123,6 +124,18 @@ public class MainActivity extends AppCompatActivity {
         }
         //Add main header to top (pos 0)
         settingList.add(0, new HeaderSetting(getString(R.string.springboard)));
+
+        IconSetting info = new IconSetting(getDrawable((R.drawable.info)), getString(R.string.info_title),
+                getString(R.string.app_name), new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, InfoActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        settingList.add(1, info);
+
         //Create adapter with setting list and a change listener to save the settings on move
         Adapter adapter = new Adapter(this, settingList, new Adapter.ChangeListener() {
             @Override
@@ -130,6 +143,7 @@ public class MainActivity extends AppCompatActivity {
                 checkSave();
             }
         });
+
         //Create recyclerview as layout
         RecyclerView recyclerView = new RecyclerView(this);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

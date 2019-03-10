@@ -1,7 +1,10 @@
 <resources>
-    <string name="app_name">Springboard Settings</string>
-    <string name="springboard">Springboard</string>
+    <string name="info_title">Información</string>
+    <string name="info_version">Versión</string>
+    <string name="info_author">Autor</string>
+    <string name="info_original_author">Autor Original</string>
     <string name="unknown">Desconocido</string>
     <string name="saved">Guardado</string>
+    <string name="icon">ICONO</string>
     <string name="error_loading">Imposible cargar las páginas del springboard. Prueba a abrir Amazfit app en el teléfono, reorganiza y habilita/deshabilita los widgets en la configuración, después recarga</string>
 </resources>
