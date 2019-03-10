@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    tools:layout_gravity="center_vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingStart="@dimen/padding_round"
+    android:paddingEnd="@dimen/padding_round"
+    android:layout_height="72dp">
+
+    <Switch
+        android:id="@+id/sw"
+        android:layout_width="72dp"
+        android:layout_height="match_parent"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingEnd="12dp"
+        android:textOff=""
+        android:textOn="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.manumatnez.app.sbsettings.AlwaysMarqueeTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/white"
+            tools:text="Título" />
+
+        <com.manumatnez.app.sbsettings.AlwaysMarqueeTextView
+            android:id="@+id/subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            tools:text="Subtítulo\nMulti fila" />
+    </LinearLayout>
+</LinearLayout>
